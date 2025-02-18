@@ -1,11 +1,11 @@
-import { Header } from "@/components/Header"
-import { Hero } from "@/components/Hero"
-import { BeforeAfter } from "@/components/BeforeAfter"
-import { ICP } from "@/components/ICP"
-import { Features } from "@/components/Features"
-import { Testimonials } from "@/components/Testimonials"
-import { CTA } from "@/components/CTA"
-import { Footer } from "@/components/Footer"
+import { Header } from "../components/Header"
+import { Hero } from "../components/HeroSection"
+import { BeforeAfter } from "../components/BeforeAfter"
+import { ICP } from "../components/ICP"
+import { Features } from "../components/FeaturesList"
+import { Testimonials } from "../components/TestimonialSection"
+import { CTASection } from "../components/CTASection"
+import { Footer } from "../components/FooterSection"
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <BeforeAfter />
       <Features />
       <Testimonials />
-      <CTA />
+      <CTASection />
       <Footer />
     </main>
   )

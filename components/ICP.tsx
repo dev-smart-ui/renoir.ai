@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Target, Users, Building2, TrendingUp, Lightbulb } from "lucide-react"
-import { Button } from "./ui/button"
+import { Button } from "../components/ui/button"
 
 const icpFeatures = [
   {
