@@ -2,28 +2,31 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Cesar from "./CesarVasques.jpeg"
+import Luke from "./LukeMorris.jpeg"
+import Michael from "./MichaelLindman.jpeg"
 
 const testimonials = [
   {
     quote:
       "After working with various agencies and consultants, it's refreshing to have a partner like Renoir who truly understands our challenges. They've been in our shoes, and it shows in their approach.",
-    author: "Sarah Chen",
-    title: "VP of Sales",
-    company: "Tech Innovators Inc.",
+    author: "Cesar Vasquez",
+    title: "CMO",
+    image: Cesar,
   },
   {
     quote:
       "Renoir's AI-powered prospect matching has revolutionized our sales process. We're now targeting the right companies with precision, significantly boosting our conversion rates.",
-    author: "Marcus Rodriguez",
-    title: "Sales Director",
-    company: "Global Solutions Ltd.",
+    author: "Luke Morris",
+    title: "Founder",
+    image: Luke,
   },
   {
     quote:
       "The workflow automation and personalized outreach capabilities of Renoir have dramatically increased our team's productivity. We're closing deals faster than ever before.",
-    author: "Emily Watson",
-    title: "Revenue Operations Manager",
-    company: "Growth Dynamics",
+    author: "Michael Lindman",
+    title: "Sales Director",
+    image: Michael,
   },
 ]
 
@@ -43,8 +46,8 @@ export function Testimonials() {
             >
               <div className="flex items-center mb-6">
                 <Image
-                  src={`/testimonial-${index + 1}.jpg`}
-                  alt={testimonial.author}
+                  src={testimonial.image}
+                  alt="Cesar"
                   width={60}
                   height={60}
                   className="rounded-full mr-4 object-cover"

@@ -1,0 +1,12 @@
+.icon {
+	width: 19px;
+	height: 19px;
+	path {
+		fill: hsl(var(--muted-foreground));
+	}
+	&:hover {
+		path {
+			fill: rgb(79 255 176 / var(--tw-bg-opacity, 1));
+		}
+	}
+}

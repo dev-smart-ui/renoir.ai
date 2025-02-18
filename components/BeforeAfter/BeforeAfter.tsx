@@ -2,6 +2,14 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Slack from "./Slack_icon_2019.svg.png"
+import SalesForce from "./Salesforce.com_logo.svg.png"
+import HubSpot from "./HubSpot_icon.png"
+import Calendly from "./Calendly_icon.png"
+import Linkedin from "./Linkedin_icon.png"
+import Outlook from "./Outlook_icon.png"
+import After from "./After_image.webp"
+import styles from "./BeforeAfter.module.scss"
 
 export function BeforeAfter() {
   return (
@@ -20,18 +28,18 @@ export function BeforeAfter() {
             <p className="text-xl text-gray-400 mb-12">
               Managing multiple subscriptions, juggling different tools, and watching costs spiral out of control.
             </p>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 row-icons gap-6">
               <div className="relative w-16 h-16">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MJybTTu1tWAKcatgHWJiD1gXz0QLMZ.png"
-                  alt="Integration tools"
+                  src={HubSpot}
+                  alt="HubSpot icon"
                   fill
                   className="object-contain"
                 />
               </div>
               <div className="relative w-16 h-16">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MJybTTu1tWAKcatgHWJiD1gXz0QLMZ.png"
+                  src={SalesForce}
                   alt="Salesforce logo"
                   fill
                   className="object-contain"
@@ -39,7 +47,7 @@ export function BeforeAfter() {
               </div>
               <div className="relative w-16 h-16">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MJybTTu1tWAKcatgHWJiD1gXz0QLMZ.png"
+                  src={Slack}
                   alt="Slack logo"
                   fill
                   className="object-contain"
@@ -47,24 +55,24 @@ export function BeforeAfter() {
               </div>
               <div className="relative w-16 h-16">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MJybTTu1tWAKcatgHWJiD1gXz0QLMZ.png"
-                  alt="LinkedIn logo"
+                  src={Calendly}
+                  alt="Calendly logo"
                   fill
                   className="object-contain"
                 />
               </div>
               <div className="relative w-16 h-16">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MJybTTu1tWAKcatgHWJiD1gXz0QLMZ.png"
+                  src={Linkedin}
+                  alt="Linkedin logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-16 h-16">
+                <Image
+                  src={Outlook}
                   alt="Outlook logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div className="relative w-16 h-16">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MJybTTu1tWAKcatgHWJiD1gXz0QLMZ.png"
-                  alt="Google logo"
                   fill
                   className="object-contain"
                 />
@@ -84,17 +92,14 @@ export function BeforeAfter() {
               One powerful platform, one subscription, massive cost savings. Replace your entire sales tech stack with
               Renoir.
             </p>
-            <div className="grid grid-cols-4 gap-6">
-              {Array.from({ length: 16 }).map((_, index) => (
-                <div key={index} className="relative w-16 h-16">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MJybTTu1tWAKcatgHWJiD1gXz0QLMZ.png"
-                    alt={`Tool ${index + 1}`}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              ))}
+            <div className="grid grid-cols-1 gap-6">
+              <Image
+                  src={After}
+                  alt="List logos"
+                  className={styles.after}
+                  width={400}
+                  height={400}
+              />
             </div>
           </motion.div>
         </div>
