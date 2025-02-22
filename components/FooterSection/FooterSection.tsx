@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
 import { Facebook, X, LinkedinIcon as LinkedIn } from "lucide-react"
 import styles from "./FooterSection.module.scss"
 
@@ -18,6 +21,12 @@ const Twitter = () => (
 
 
 export function Footer() {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+    }
+  }
   return (
     <footer className="bg-secondary py-12">
       <div className="container mx-auto">
@@ -26,17 +35,17 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-muted-foreground hover:text-primary">
-                  About
-                </Link>
+              <button onClick={() => scrollToSection("about")} className="text-muted-foreground hover:text-primary">
+                About
+              </button>
               </li>
               <li>
-                <Link href="/features" className="text-muted-foreground hover:text-primary">
-                  Services
-                </Link>
+                <button onClick={() => scrollToSection("resources")} className="text-muted-foreground hover:text-primary">
+                  Resources
+                </button>
               </li>
               <li>
-                <Link href="/blog" className="text-muted-foreground hover:text-primary">
+                <Link href="#" className="text-muted-foreground hover:text-primary">
                   Blog
                 </Link>
               </li>
@@ -46,17 +55,17 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/contact" className="text-muted-foreground hover:text-primary">
+                <button onClick={() => scrollToSection("contact")} className="text-muted-foreground hover:text-primary">
                   Contact
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="/privacy" className="text-muted-foreground hover:text-primary">
+                <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-muted-foreground hover:text-primary">
+                <Link href="/terms-of-service" className="text-muted-foreground hover:text-primary">
                   Terms of Service
                 </Link>
               </li>
@@ -81,7 +90,7 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Newsletter</h3>
             <p className="text-muted-foreground mb-4">Stay updated with our latest news and offers.</p>
             <form className="flex">
-              <input type="email" placeholder="Enter your email" className="flex-grow p-2 rounded-l-md" />
+              <input required type="email" placeholder="Enter your email" className="flex-grow p-2 rounded-l-md" />
               <button type="submit" className="bg-primary text-primary-foreground p-2 rounded-r-md">
                 Subscribe
               </button>

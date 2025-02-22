@@ -42,7 +42,7 @@ export function ICP() {
   }
 
   return (
-    <section id="icp" className="py-20 bg-secondary">
+    <section id="resources" className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Pinpoint Your Perfect Prospects</h2>

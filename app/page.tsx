@@ -10,7 +10,7 @@ import { Footer } from "../components/FooterSection/FooterSection"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main id="top" className="min-h-screen">
       <Header />
       <Hero />
       <ICP />

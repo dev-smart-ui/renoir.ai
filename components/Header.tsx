@@ -17,7 +17,7 @@ export function Header() {
           Renoir.AI
         </button>
         <div className="hidden md:flex space-x-6">
-          <button onClick={() => scrollToSection("products")} className="text-sm hover:text-primary transition-colors">
+          <button onClick={() => scrollToSection("top")} className="text-sm hover:text-primary transition-colors">
             Home
           </button>
           <button onClick={() => scrollToSection("about")} className="text-sm hover:text-primary transition-colors">
