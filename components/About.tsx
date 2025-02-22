@@ -4,6 +4,12 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 
 export function About() {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+    }
+  }
   return (
     <section id="about" className="py-20 bg-secondary scroll-mt-20">
       <div className="container mx-auto px-4">
@@ -36,7 +42,7 @@ export function About() {
               insights to execute at scale. From sales process refinement and data-driven prospecting to intelligent
               deal acceleration, Renoir ensures every part of your GTM motion is enabled, optimized, and built to win.
             </p>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Learn More</Button>
+            <Button onClick={() => scrollToSection("contact")} className="bg-primary text-primary-foreground hover:bg-primary/90">Learn More</Button>
           </motion.div>
 
           <motion.div

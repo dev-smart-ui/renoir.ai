@@ -27,7 +27,7 @@ export function Header() {
             Resources
           </button>
         </div>
-        <Button>Boost Your Sales Now</Button>
+        <Button onClick={() => scrollToSection("contact")}>Boost Your Sales Now</Button>
       </nav>
     </header>
   )

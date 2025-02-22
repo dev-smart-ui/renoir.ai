@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Target, Users, Building2, TrendingUp, Lightbulb } from "lucide-react"
-import { Button } from "../components/ui/button"
+import { Button } from "./ui/button"
 
 const icpFeatures = [
   {
@@ -34,6 +34,13 @@ const icpFeatures = [
 ]
 
 export function ICP() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact")
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section id="icp" className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
@@ -60,7 +67,11 @@ export function ICP() {
           ))}
         </div>
         <div className="mt-12 text-center">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button
+            size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+            onClick={scrollToContact}
+          >
             Activate AI-Powered Targeting
           </Button>
           <p className="mt-4 text-sm text-muted-foreground">
