@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { MultiStepForm } from "./MultiStepForm"
+import { MultiStepForm } from "./MultiStepForm/MultiStepForm"
 import { WorkflowVisualization } from "./WorkflowVisualization"
 
 export function Hero() {

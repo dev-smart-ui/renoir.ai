@@ -4,9 +4,11 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Button } from "../components/ui/button"
-import { Input } from "../components/ui/input"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
+import { Button } from "../ui/button"
+import { Input } from "../ui/input"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select"
+import {Thank} from "@/components/MultiStepForm/thank/thank";
+import {Error} from "@/components/MultiStepForm/Error/Error";
 
 const formSteps = [
   { id: "email", label: "Work Email" },
@@ -44,8 +46,21 @@ export function MultiStepForm() {
   }
 
   const handleSubmit = () => {
-    console.log("Form submitted:", formData)
-    // Here you would typically send the form data to your backend
+    try{
+      const data =  fetch("/api/email",
+          {
+            method: "POST" ,
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+          })
+
+      console.log("Form submitted:", formData ,data)
+      setCurrentStep(5)
+    } catch (e){
+      console.log(e)
+      setCurrentStep(6)
+    }
+
   }
 
   return (
@@ -131,11 +146,15 @@ export function MultiStepForm() {
               </SelectContent>
             </Select>
           )}
+          {currentStep===5 && <Thank setCurrentStep={setCurrentStep}/>}
+          {currentStep===6 && <Error setCurrentStep={setCurrentStep}/>}
         </motion.div>
       </AnimatePresence>
+      {currentStep <(formSteps.length)&&
       <Button onClick={handleNext} className="w-full bg-gradient-to-r from-primary to-accent text-white">
         {currentStep < formSteps.length - 1 ? "Next" : "Submit"}
       </Button>
+      }
     </div>
   )
 }
