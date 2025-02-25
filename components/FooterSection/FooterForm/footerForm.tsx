@@ -6,7 +6,7 @@ export const FooterForm = () => {
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        setStatus("loading"); // Показываем лоадер
+        setStatus("loading");
 
         try {
             const response = await fetch("/api/email", {

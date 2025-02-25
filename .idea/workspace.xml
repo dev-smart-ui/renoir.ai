@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d51ec7b-9d61-411b-8924-0ff207149cf5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/FooterSection/FooterForm/footerForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ctaSection/CTASection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ctaSection/result/result.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ctaSection/result/result.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/email/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/email/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CTASection.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FooterSection/FooterSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FooterSection/FooterSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MultiStepForm/Error/Error.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/MultiStepForm/Error/Error.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MultiStepForm/Error/Error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MultiStepForm/Error/Error.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MultiStepForm/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MultiStepForm/MultiStepForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MultiStepForm/thank/thank.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/MultiStepForm/thank/thank.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MultiStepForm/thank/thank.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MultiStepForm/thank/thank.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FooterSection/FooterForm/footerForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FooterSection/FooterForm/footerForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ctaSection/result/result.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ctaSection/result/result.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +70,7 @@
       <workItem from="1740482106379" duration="110000" />
       <workItem from="1740482237282" duration="31000" />
       <workItem from="1740482714863" duration="1004000" />
-      <workItem from="1740485032982" duration="1734000" />
+      <workItem from="1740485032982" duration="2027000" />
     </task>
     <servers />
   </component>

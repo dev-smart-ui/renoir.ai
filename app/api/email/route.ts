@@ -1,12 +1,12 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY); // Хранение ключа в .env - безопаснее!
+const resend = new Resend(process.env.RESEND_API_KEY);
 // const resend = new Resend('re_cZkzNZ2X_76o5Bm3Vx9DB3seq4mUzCJvp');
 export async function POST(req: any) {
     console.log("Привет из API!");
     const data = await req.json();
 
-    // Создаем HTML-таблицу с перебором всех полей
+
     const tableRows = Object.entries(data)
         .map(([key, value]) => `
             <tr>
@@ -19,7 +19,7 @@ export async function POST(req: any) {
     try {
         const response = await resend.emails.send({
             from: 'no-reply@renoir.one',
-            to: 'viktormoskalev07@gmail.com',
+            to: 'doug@renoir.one',
             subject: 'Renoir.AI Contact Form',
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #f9f9f9;">

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import styles from './result.module.scss'
 import { Button } from "../../ui/button";
 export const Result = ({formState , onReset }) => {
 
