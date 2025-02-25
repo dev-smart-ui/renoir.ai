@@ -29,7 +29,8 @@ export const FooterForm = () => {
     };
 
     return (
-        <div className="flex flex-col items-center space-y-2">
+
+        <div className="flex flex-col justify-start items-start space-y-2  ">
             {status === "success" ? (
                 <p className="text-green-600 bg-green-100 p-2 rounded-md">
                     ✅ Successfully subscribed!

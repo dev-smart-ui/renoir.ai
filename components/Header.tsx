@@ -54,7 +54,7 @@ export function Header() {
         <a
           href="/#contact"
           onClick={(e) => handleSmoothScroll(e, "contact")}
-          className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition font-semibold"
+          className="bg-primary text-[12px] md:text-[16px] text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition font-semibold"
         >
           Boost Your Sales Now
         </a>

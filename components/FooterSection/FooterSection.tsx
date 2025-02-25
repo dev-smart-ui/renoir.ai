@@ -46,7 +46,7 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary">
+                <Link href="/blog" className="text-muted-foreground hover:text-primary">
                   Blog
                 </Link>
               </li>
