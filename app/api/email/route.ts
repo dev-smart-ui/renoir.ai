@@ -2,11 +2,8 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 // const resend = new Resend('re_cZkzNZ2X_76o5Bm3Vx9DB3seq4mUzCJvp');
-export async function POST(req: any) {
-    console.log("Привет из API!");
-    const data = await req.json();
-
-
+export async function POST(req: any) { 
+    const data = await req.json(); 
     const tableRows = Object.entries(data)
         .map(([key, value]) => `
             <tr>
@@ -30,12 +27,10 @@ export async function POST(req: any) {
                     <p style="margin-top: 20px; font-size: 14px; color: #666;">This message was sent from your website contact form.</p>
                 </div>
             `
-        });
-
+        }); 
         console.log(response);
         return Response.json({ message: "Email sent successfully", response });
-    } catch (error) {
-        console.error("Ошибка отправки email:", error);
+    } catch (error:any) { 
         return Response.json({ error: "Failed to send email", details: error.message }, { status: 500 });
     }
 }

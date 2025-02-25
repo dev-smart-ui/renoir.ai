@@ -36,7 +36,7 @@ export function WorkflowVisualization() {
             <div className="w-12 h-12 rounded-full bg-[#1a2b4b] flex items-center justify-center">
               <User className="w-6 h-6 text-[#4FFFB0]" />
             </div>
-            <span className="text-white text-sm mt-2">Ready to buy</span>
+            <span className="text-white text-[12px] md:text-sm mt-2">Ready to buy</span>
           </div>
 
           {/* Connection line with items */}
@@ -57,9 +57,9 @@ export function WorkflowVisualization() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: Item.delay }}
-                className="w-10 h-10 rounded-full bg-[#1a2b4b] flex items-center justify-center z-10"
+                className="w-6 h-6 md:w-10 md:h-10 rounded-full bg-[#1a2b4b] flex items-center justify-center z-10"
               >
-                <Item.icon className="w-5 h-5 text-[#4FFFB0]" />
+                <Item.icon className="w-3 md:w-5 h-3 md:h-5 text-[#4FFFB0]" />
               </motion.div>
             ))}
           </div>
@@ -68,7 +68,7 @@ export function WorkflowVisualization() {
             <div className="w-12 h-12 rounded-full bg-[#1a2b4b] flex items-center justify-center">
               <Calendar className="w-6 h-6 text-[#4FFFB0]" />
             </div>
-            <span className="text-white text-sm mt-2">Meeting booked</span>
+            <span className="text-white text-[12px] md:text-sm mt-2">Meeting booked</span>
           </div>
         </div>
       </motion.div>

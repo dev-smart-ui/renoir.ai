@@ -46,12 +46,12 @@ export const FooterForm = () => {
                         placeholder="Enter your email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="flex-grow p-2 rounded-l-md border border-gray-300"
+                        className="flex-grow p-2 text-[12px] rounded-l-md border border-gray-300"
                         disabled={status === "loading"}
                     />
                     <button
                         type="submit"
-                        className="bg-primary text-primary-foreground p-2 rounded-r-md flex items-center justify-center min-w-[100px]"
+                        className="bg-primary text-[14px]  text-primary-foreground p-1 rounded-r-md flex items-center justify-center min-w-[100px]"
                         disabled={status === "loading"}
                     >
                         {status === "loading" ? (

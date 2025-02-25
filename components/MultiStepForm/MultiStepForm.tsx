@@ -53,6 +53,7 @@ export function MultiStepForm() {
   }
 
   const handleSubmit =  async () => {
+    setCurrentStep(-1)
     try {
       const data =await fetch("/api/email", {
         method: "POST",
@@ -158,8 +159,9 @@ export function MultiStepForm() {
           </motion.div>
         </AnimatePresence>
         {currentStep < formSteps.length && (
-            <Button onClick={handleNext} className="w-full bg-gradient-to-r from-primary to-accent text-white">
+            <Button onClick={handleNext} disabled={currentStep===-1} className="w-full relative bg-gradient-to-r from-primary to-accent text-white">
               {currentStep < formSteps.length - 1 ? "Next" : "Submit"}
+              {(currentStep===-1)&& <span className="animate-spin h-5 w-5 border-2 absolute right-2 border-primary border-t-transparent rounded-full"></span>}
             </Button>
         )}
         {error && <p className="absolute text-red-500 text-sm">{error}</p>}

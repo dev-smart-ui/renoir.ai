@@ -55,11 +55,11 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
-              <li>
+              {/* <li>
                 <button onClick={() => scrollToSection("contact")} className="text-muted-foreground hover:text-primary">
                   Contact
                 </button>
-              </li>
+              </li> */}
               <li>
                 <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary">
                   Privacy Policy
@@ -72,7 +72,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-span-2 md:col-span-1">
+          {/* <div className="col-span-2 md:col-span-1">
             <h3 className="font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-primary">
@@ -86,7 +86,7 @@ export function Footer() {
                 <LinkedIn />
               </Link>
             </div>
-          </div>
+          </div> */}
           <div className="col-span-2 md:col-span-1">
             <h3 className="font-semibold mb-4">Newsletter</h3>
             <p className="text-muted-foreground mb-4">Stay updated with our latest news and offers.</p>

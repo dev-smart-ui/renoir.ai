@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d51ec7b-9d61-411b-8924-0ff207149cf5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/api/email/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/email/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FooterSection/FooterForm/footerForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FooterSection/FooterForm/footerForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ctaSection/result/result.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ctaSection/result/result.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +31,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/work/11.24/renoir.ai&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\work\\11.24\\renoir.ai\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/work/1.25/nextjs.headless.umbraco",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\work\\11.24\\renoir.ai\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\11.24\renoir.ai\components\ctaSection" />
@@ -70,7 +68,8 @@
       <workItem from="1740482106379" duration="110000" />
       <workItem from="1740482237282" duration="31000" />
       <workItem from="1740482714863" duration="1004000" />
-      <workItem from="1740485032982" duration="2027000" />
+      <workItem from="1740485032982" duration="2388000" />
+      <workItem from="1740489182346" duration="106000" />
     </task>
     <servers />
   </component>

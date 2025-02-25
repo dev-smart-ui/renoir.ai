@@ -17,8 +17,9 @@ export function CTASection() {
     handleSubmit,
     formState: { errors },
   } = useForm<FormValues>();  
-  const [formState , setFormState] = useState("form")
+  const [formState , setFormState] = useState<"form"|"success"|"error"|"loading">("form")
   const onSubmit = async(data: FormValues) => { 
+      setFormState("loading")
       try {
         const response = await fetch("/api/email", {
           method: "POST",
@@ -43,7 +44,7 @@ export function CTASection() {
       <section id="contact" className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Automate & Scale?</h2>
-          {formState === "form" ? <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto">
+          {formState === "form"||formState==="loading" ? <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto">
             <div className="flex flex-col space-y-4">
               <Input
                   {...register("name", {required: "Name is required"})}
@@ -75,9 +76,11 @@ export function CTASection() {
               />
               {errors.company && <p className="text-red-500 text-sm">{errors.company.message}</p>}
 
-              <Button type="submit" size="lg" className="w-full bg-background text-primary hover:bg-background/90">
-                Get Started
+              <Button disabled={formState==="loading"} type="submit" size="lg" className="w-full relative bg-background text-primary hover:bg-background/90">
+                Get Started 
+                {formState==="loading"&& <span className="animate-spin h-5 w-5 border-2 absolute right-2 border-primary border-t-transparent rounded-full"></span>}
               </Button>
+              
             </div>
           </form> : <Result onReset={()=>setFormState("form")} formState={formState}/>}
 

@@ -1,35 +1,64 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+
+const navLinks = [
+  { label: "Home", id: "top" },
+  { label: "About", id: "about" },
+  { label: "Resources", id: "resources" },
+];
 
 export function Header() {
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId)
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" })
+  const router = useRouter();
+
+  const handleSmoothScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, sectionId: string) => {
+    event.preventDefault();
+    if (window.location.pathname !== "/") {
+      router.push(`/#${sectionId}`);
+    } else {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
-  }
+  };
+
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    const section = document.getElementById(hash);
+    if (section) {
+      setTimeout(() => section.scrollIntoView({ behavior: "smooth" }), 300);
+    }
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md" id="top">
       <nav className="container mx-auto flex items-center justify-between py-4">
-        <button onClick={() => scrollToSection("top")} className="text-2xl font-bold text-primary">
+        <Link href="/" className="text-2xl font-bold text-primary">
           Renoir.AI
-        </button>
+        </Link>
         <div className="hidden md:flex space-x-6">
-          <button onClick={() => scrollToSection("top")} className="text-sm hover:text-primary transition-colors">
-            Home
-          </button>
-          <button onClick={() => scrollToSection("about")} className="text-sm hover:text-primary transition-colors">
-            About
-          </button>
-          <button onClick={() => scrollToSection("resources")} className="text-sm hover:text-primary transition-colors">
-            Resources
-          </button>
+          {navLinks.map(({ label, id }) => (
+            <a
+              key={id}
+              href={`/#${id}`}
+              onClick={(e) => handleSmoothScroll(e, id)}
+              className="text-sm hover:text-primary transition-colors"
+            >
+              {label}
+            </a>
+          ))}
         </div>
-        <Button onClick={() => scrollToSection("contact")}>Boost Your Sales Now</Button>
+        <a
+          href="/#contact"
+          onClick={(e) => handleSmoothScroll(e, "contact")}
+          className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition font-semibold"
+        >
+          Boost Your Sales Now
+        </a>
       </nav>
     </header>
-  )
+  );
 }
-
