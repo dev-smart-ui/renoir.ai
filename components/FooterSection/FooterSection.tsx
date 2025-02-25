@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Facebook, X, LinkedinIcon as LinkedIn } from "lucide-react"
 import styles from "./FooterSection.module.scss"
+import {FooterForm} from "@/components/FooterSection/FooterForm/footerForm";
 
 
 const Twitter = () => (
@@ -30,7 +31,7 @@ export function Footer() {
   return (
     <footer className="bg-secondary py-12">
       <div className="container mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-8">
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
@@ -89,12 +90,7 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <h3 className="font-semibold mb-4">Newsletter</h3>
             <p className="text-muted-foreground mb-4">Stay updated with our latest news and offers.</p>
-            <form className="flex">
-              <input required type="email" placeholder="Enter your email" className="flex-grow p-2 rounded-l-md" />
-              <button type="submit" className="bg-primary text-primary-foreground p-2 rounded-r-md">
-                Subscribe
-              </button>
-            </form>
+            <FooterForm/>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-muted-foreground/20 text-center text-muted-foreground">

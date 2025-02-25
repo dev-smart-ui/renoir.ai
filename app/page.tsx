@@ -5,7 +5,7 @@ import { ICP } from "../components/ICP"
 import { Features } from "../components/FeaturesList"
 import { About } from "../components/About"
 import { Testimonials } from "../components/TestimonialsSection/TestimonialSection"
-import { CTASection } from "../components/CTASection"
+import { CTASection } from "../components/ctaSection/CTASection"
 import { Footer } from "../components/FooterSection/FooterSection"
 
 export default function Home() {
