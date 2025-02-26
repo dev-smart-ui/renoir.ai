@@ -70,7 +70,7 @@ export function MultiStepForm() {
   }
 
   return (
-      <div className="w-full max-w-md mx-auto">
+      <div className="w-full max-w-md  mx-auto lg:ml-0">
         <div className="flex justify-between mb-4">
           {formSteps.map((step, index) => (
               <div key={step.id} className={`w-1/5 h-1 rounded ${index <= currentStep ? "bg-primary" : "bg-gray-200"}`} />

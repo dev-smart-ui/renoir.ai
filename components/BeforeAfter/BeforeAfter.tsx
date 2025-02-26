@@ -33,7 +33,6 @@ export function BeforeAfter() {
                 <Image
                   src={HubSpot}
                   alt="HubSpot icon"
-                  fill
                   className="object-contain"
                 />
               </div>
@@ -41,7 +40,6 @@ export function BeforeAfter() {
                 <Image
                   src={SalesForce}
                   alt="Salesforce logo"
-                  fill
                   className="object-contain"
                 />
               </div>
@@ -49,15 +47,13 @@ export function BeforeAfter() {
                 <Image
                   src={Slack}
                   alt="Slack logo"
-                  fill
                   className="object-contain"
                 />
               </div>
               <div className="relative w-16 h-16">
                 <Image
                   src={Calendly}
-                  alt="Calendly logo"
-                  fill
+                  alt="Calendly logo"  
                   className="object-contain"
                 />
               </div>
@@ -65,15 +61,13 @@ export function BeforeAfter() {
                 <Image
                   src={Linkedin}
                   alt="Linkedin logo"
-                  fill
                   className="object-contain"
                 />
               </div>
               <div className="relative w-16 h-16">
                 <Image
                   src={Outlook}
-                  alt="Outlook logo"
-                  fill
+                  alt="Outlook logo" 
                   className="object-contain"
                 />
               </div>

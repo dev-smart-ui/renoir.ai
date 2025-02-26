@@ -4,8 +4,10 @@ import { motion } from "framer-motion"
 import { Mail, Phone, Calendar, User, Linkedin, Search } from "lucide-react"
 
 export function WorkflowVisualization() {
+  const mainCircleClass = "w-8 h-8 md:w-12 md:h-12 rounded-full bg-[#1a2b4b] flex items-center justify-center"
+  const iconClass = "w-4 h-4 md:w-6 md:h-6 text-[#4FFFB0]"
   return (
-    <div className="bg-[#0B1527] p-8 rounded-xl relative overflow-hidden">
+    <div className="bg-[#0B1527] p4 md:p-8 rounded-xl relative overflow-hidden">
       {/* Discovery step */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -14,8 +16,8 @@ export function WorkflowVisualization() {
         className="mb-8"
       >
         <div className="flex flex-col items-center group">
-          <div className="w-12 h-12 rounded-full bg-[#1a2b4b] flex items-center justify-center">
-            <Search className="w-6 h-6 text-[#4FFFB0]" />
+          <div className={mainCircleClass}>
+            <Search className={iconClass} />
           </div>
           <span className="text-white text-sm mt-2">Identify ICP</span>
           <div className="absolute invisible group-hover:visible bg-white text-black text-xs p-2 rounded mt-16 z-10">
@@ -33,10 +35,10 @@ export function WorkflowVisualization() {
       >
         <div className="flex items-center gap-8 relative">
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 rounded-full bg-[#1a2b4b] flex items-center justify-center">
-              <User className="w-6 h-6 text-[#4FFFB0]" />
+          <div className={mainCircleClass}>
+              <User className={iconClass} />
             </div>
-            <span className="text-white text-[12px] md:text-sm mt-2">Ready to buy</span>
+            <span className="text-white text-[12px] md:text-sm mt-2 text-center">Ready to buy</span>
           </div>
 
           {/* Connection line with items */}
@@ -57,7 +59,7 @@ export function WorkflowVisualization() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: Item.delay }}
-                className="w-6 h-6 md:w-10 md:h-10 rounded-full bg-[#1a2b4b] flex items-center justify-center z-10"
+                className={ "w-6 h-6 md:w-10 md:h-10 rounded-full bg-[#1a2b4b] flex items-center justify-center z-10"  + (index>0? " ml-1" :" ")}
               >
                 <Item.icon className="w-3 md:w-5 h-3 md:h-5 text-[#4FFFB0]" />
               </motion.div>
@@ -65,10 +67,10 @@ export function WorkflowVisualization() {
           </div>
 
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 rounded-full bg-[#1a2b4b] flex items-center justify-center">
-              <Calendar className="w-6 h-6 text-[#4FFFB0]" />
+          <div className={mainCircleClass}>
+              <Calendar className={iconClass} />
             </div>
-            <span className="text-white text-[12px] md:text-sm mt-2">Meeting booked</span>
+            <span className="text-white text-[12px] md:text-sm mt-2 text-center">Meeting booked</span>
           </div>
         </div>
       </motion.div>
@@ -81,8 +83,8 @@ export function WorkflowVisualization() {
         className="mb-8"
       >
         <div className="flex flex-col items-center group">
-          <div className="w-12 h-12 rounded-full bg-[#1a2b4b] flex items-center justify-center">
-            <Search className="w-6 h-6 text-[#4FFFB0]" />
+        <div className={mainCircleClass}>
+            <Search className={iconClass} />
           </div>
           <span className="text-white text-sm mt-2">Identify ICP</span>
           <div className="absolute invisible group-hover:visible bg-white text-black text-xs p-2 rounded mt-16 z-10">
@@ -99,8 +101,8 @@ export function WorkflowVisualization() {
       >
         <div className="flex items-center gap-8">
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 rounded-full bg-[#1a2b4b] flex items-center justify-center">
-              <User className="w-6 h-6 text-[#4FFFB0]" />
+          <div className={mainCircleClass}>
+              <User className={iconClass} />
             </div>
             <span className="text-white text-sm mt-2">No Interest</span>
           </div>
