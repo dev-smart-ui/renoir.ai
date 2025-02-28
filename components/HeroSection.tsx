@@ -15,7 +15,7 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-[#4FFFB0]">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-[#7945f5]">
               Designed by a CRO, Powered by AI—GTM That Works
             </h1>
             <p className="text-xl mb-8 text-gray-300">Built for Sales Leaders, Engineered for Revenue Growth.</p>
