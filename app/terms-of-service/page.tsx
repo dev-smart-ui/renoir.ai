@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/FooterSection/FooterSection";
+import Link from "next/link";
 
 
 
@@ -39,7 +40,7 @@ export default function TermsOfService() {
                     <p className="mb-4 text-muted-foreground"> We may update these terms periodically. Continued use of our services constitutes acceptance of the latest terms.</p>
                     <h3 className="text-xl font-bold mb-6 mt-12">3. Contact Information</h3>
                     <p className="mb-4 text-muted-foreground">For privacy inquiries, requests, or general questions, contact us at:</p>
-                    <p className="mb-4 text-muted-foreground"> Email: Doug@Renoir.Pro</p>
+                    <p className="mb-4 text-muted-foreground"> Email: <Link href='mailto:doug@renoir.pro' className='hover:underline'>doug@renoir.pro</Link></p>
                 </div>
             </section>
             <Footer />

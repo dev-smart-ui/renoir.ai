@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/FooterSection/FooterSection";
+import Link from "next/link";
 
 export default function PrivacyPolicy() {
 
@@ -63,7 +64,7 @@ export default function PrivacyPolicy() {
             </div>
             <h3 className="text-xl font-bold mb-6 mt-12">4. Your Rights (GDPR & CCPA Compliance)</h3>
             <h4 className="text-xl font-bold mb-6 mt-6">4.1 Rights for EU Users (GDPR)</h4>
-            <p>You have the right to:</p> 
+            <p className='mb-4 text-muted-foreground'>You have the right to:</p>
             <div className="mb-4 text-muted-foreground">
               <ul>
                 <li>&#10004; Access, correct, or delete your personal data.</li>
@@ -72,71 +73,71 @@ export default function PrivacyPolicy() {
                 <li>&#10004; Withdraw consent at any time.</li>
               </ul> 
             </div>
-            <p className="mb-4 text-muted-foreground">To exercise your rights, contact us at Doug@renoir.one.</p>
+            <p className="mb-4 text-muted-foreground">To exercise your rights, contact us at <Link href='mailto:doug@renoir.one' className='hover:underline'>doug@renoir.one.</Link></p>
             <h3 className="text-xl font-bold mb-6 mt-12">4.2 Rights for California Residents (CCPA)</h3>
             
             <div className="mb-4 text-muted-foreground">
-              <p>California users can:</p> 
+              <p className='mb-4'>California users can:</p>
               <ul>
                 <li>&#10004; Request details about the personal data we collect.</li>
                 <li>&#10004; Ask for deletion of personal data.</li>
                 <li>&#10004; Opt out of data sales (we do not sell data).</li>
               </ul> 
             </div>
-            <p className="mb-4 text-muted-foreground">To make a CCPA request, contact us at Doug@renoir.one</p>
+            <p className="mb-4 text-muted-foreground">To make a CCPA request, contact us at <Link href='mailto:doug@renoir.one' className='hover:underline'>doug@renoir.one.</Link></p>
             <h3 className="text-xl font-bold mb-6 mt-12">5. Data Sharing & Third-Party Processing</h3>
             <p className="mb-4 text-muted-foreground">We do not sell personal data but may share information with:</p>
-            <ul>
+            <ul className='text-muted-foreground'>
               <li>Service Providers – Cloud hosting, analytics, and customer support partners.</li>
               <li>Legal Authorities – When required by law or necessary to protect our rights.</li>
               <li>Business Transfers – If Renoir.Pro is involved in a merger, acquisition, or asset sale.</li>
             </ul>
             <h3 className="text-xl font-bold mb-6 mt-12">6. Data Retention & Security</h3>
             <p className="mb-4 text-muted-foreground">We implement best-in-class security measures including encryption, access controls, and monitoring to safeguard your data.</p>
-            <ul>
+            <ul className='text-muted-foreground'>
               <li>Retention Policy – We retain data only as long as necessary for business, legal, or compliance purposes.</li>
               <li>Inactive Accounts – Data associated with inactive accounts will be deleted or anonymized after 36 months.</li>
               <li>Breach Notification – In the event of a data breach, we will notify affected users promptly.</li>
             </ul>
             <h3 className="text-xl font-bold mb-6 mt-12">7. International Data Transfers (GDPR Compliance)</h3>
             <p className="mb-4 text-muted-foreground">For users in the EEA, if personal data is transferred outside of the EEA (e.g., to the U.S.), we implement safeguards such as:</p>
-            <ul>
+            <ul className='text-muted-foreground'>
                 <li>&#10004; Standard Contractual Clauses (SCCs) approved by the European Commission.</li>
                 <li>&#10004; Data Processing Agreements (DPAs) with third-party vendors.</li>
                 <li>&#10004; Industry best practices to ensure privacy protection.</li>
             </ul> 
             <h3 className="text-xl font-bold mb-6 mt-12">8. Children's Privacy (COPPA Compliance)</h3>
-            <p className="mb-4 text-muted-foreground">Our services are not intended for individuals under 13 years old. We do not knowingly collect personal data from children. If you believe a child has provided data, please contact us at doug@renoir.pro.</p>
+            <p className="mb-4 text-muted-foreground">Our services are not intended for individuals under 13 years old. We do not knowingly collect personal data from children. If you believe a child has provided data, please contact us at <Link href='mailto:doug@renoir.pro' className='hover:underline'>doug@renoir.pro.</Link></p>
             <h3 className="text-xl font-bold mb-6 mt-12">9. Marketing & Communication Preferences</h3>
             <p className="mb-4 text-muted-foreground">You can opt out of marketing emails at any time by:</p>
-            <ul>
+            <ul className='text-muted-foreground'>
                 <li>&#10004; Clicking the ‘unsubscribe’ link in any email.</li>
-                <li>&#10004; Contacting us at doug@renoir.pro</li>
+                <li>&#10004; Contacting us at <Link href='mailto:doug@renoir.pro' className='hover:underline'>doug@renoir.pro</Link></li>
             </ul> 
             <p className="mb-4 text-muted-foreground">Even if you opt out, you may still receive transactional emails related to your account or service updates.</p>
             <h3 className="text-xl font-bold mb-6 mt-12">10. Cookies & Tracking Technologies</h3>
-            <p>We use cookies for:</p>
-            <ul>
+            <p className='mb-4 text-muted-foreground'>We use cookies for:</p>
+            <ul className='text-muted-foreground'>
                 <li>&#10004; Essential site functionality</li>
                 <li>&#10004; Performance & analytics tracking.</li>
                 <li>&#10004; Personalized marketing.</li>
             </ul>
             <p className="mb-4 text-muted-foreground">Opt-Out Options:</p>
-            <ul>
+            <ul className='text-muted-foreground'>
               <li>You can manage your cookie preferences through your browser settings.</li>
               <li>Use third-party tools like YourAdChoices to opt out of tracking.</li>
             </ul>
             <h3 className="text-xl font-bold mb-6 mt-12">11. Updates to This Privacy Policy</h3>
             <p className="mb-4 text-muted-foreground">We may update this policy periodically. If significant changes are made, we will notify users via:</p>
-            <ul>
+            <ul className='text-muted-foreground'>
                 <li>&#10004; Email notifications</li>
                 <li>&#10004; Website banners or in-app messages.</li>
             </ul>
             <p className="mb-4 text-muted-foreground">Last Updated: 2/24/2025</p>
             <h3 className="text-xl font-bold mb-6 mt-12">12. Contact Us</h3>
             <p className="mb-4 text-muted-foreground">For questions or requests regarding this Privacy Policy, contact us at:</p>
-            <ul>
-              <li>Email: doug@renoir.one</li>
+            <ul className='text-muted-foreground'>
+              <li>Email: <Link href='mailto:doug@renoir.one' className='hover:underline'>doug@renoir.one</Link></li>
               <li>Address: 30 N, Gould Ste R. Sheridan, WY 82801</li>
             </ul>
           </div>

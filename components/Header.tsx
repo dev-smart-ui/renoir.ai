@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", id: "top" },
@@ -37,7 +38,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md" id="top">
       <nav className="container mx-auto flex items-center justify-between py-4">
         <Link href="/" className="text-2xl font-bold text-primary">
-          Renoir.AI
+         <Image src='/logo.png' width={100} height={40} alt='logo'/>
         </Link>
         <div className="hidden md:flex space-x-6">
           {navLinks.map(({ label, id }) => (
