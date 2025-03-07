@@ -1,11 +1,11 @@
 // SliderContent.jsx
 import { motion } from "framer-motion"
-import Image from "next/image"
+import Image, {StaticImageData} from "next/image"
 import {FC} from "react";
 
 interface SliderContentProps {
 	currentSlide: number
-	slides: string[]
+	slides: StaticImageData[]
 }
 
 export const SliderContent: FC<SliderContentProps> = ({ currentSlide, slides }) => {

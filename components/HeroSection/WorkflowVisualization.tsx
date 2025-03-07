@@ -21,7 +21,7 @@ export function WorkflowVisualization() {
   const startAutoSlide = () => {
     return setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
-    }, 50000)
+    }, 5000)
   }
 
   useEffect(() => {
