@@ -10,7 +10,7 @@ interface SliderContentProps {
 
 export const SliderContent: FC<SliderContentProps> = ({ currentSlide, slides }) => {
 	return (
-		<div className="w-full min-[375px]:min-h-[330px] min-[460px]:min-h-[380px] min-[460px]:w-[440px] lg:min-h-[435px] flex justify-center items-center">
+		<div className="min-[375px]:min-h-[330px] min-[460px]:min-h-[380px] min-[460px]:w-[440px] lg:min-h-[450px] lg:w-[510px] min-[1440px]:min-h-[520px] min-[1440px]:w-full flex justify-center items-center">
 			<motion.div
 				key={currentSlide}
 				initial={{ opacity: 0, x: 20 }}
