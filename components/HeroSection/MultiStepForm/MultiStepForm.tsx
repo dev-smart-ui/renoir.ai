@@ -4,11 +4,11 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Button } from "../ui/button"
-import { Input } from "../ui/input"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select"
-import { Thank } from "@/components/MultiStepForm/thank/thank";
-import { Error } from "@/components/MultiStepForm/Error/Error";
+import { Button } from "../../ui/button"
+import { Input } from "../../ui/input"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../ui/select"
+import { Thank } from "@/components/HeroSection/MultiStepForm/thank/thank";
+import { Error } from "@/components/HeroSection/MultiStepForm/Error/Error";
 
 const formSteps = [
   { id: "email", label: "Work Email" },

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Error.module.scss'
 import {Button} from "@/components/ui/button";
 
-export const Error=({setCurrentStep }) => {
+export const Error=({setCurrentStep }:{setCurrentStep: (state: number) => void}) => {
 
     return <div className={styles.Error}>
        <h2> error</h2>
