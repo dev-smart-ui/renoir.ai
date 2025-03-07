@@ -1,30 +1,27 @@
-// SliderContent.jsx
 import { motion } from "framer-motion"
-import Image, {StaticImageData} from "next/image"
-import {FC} from "react";
+import Image, { StaticImageData } from "next/image"
+import { FC } from "react"
 
 interface SliderContentProps {
-	currentSlide: number
-	slides: StaticImageData[]
+	slide: StaticImageData
 }
 
-export const SliderContent: FC<SliderContentProps> = ({ currentSlide, slides }) => {
+export const SliderContent: FC<SliderContentProps> = ({ slide }) => {
 	return (
-		<div className="min-[375px]:min-h-[330px] min-[460px]:min-h-[380px] min-[460px]:w-[440px] lg:min-h-[450px] lg:w-[510px] min-[1440px]:min-h-[520px] min-[1440px]:w-full flex justify-center items-center">
+		<div className="w-full max-w-[360px] md:max-w-[768px] lg:max-w-[650px] mx-auto aspect-[650/550] flex justify-center items-center">
 			<motion.div
-				key={currentSlide}
 				initial={{ opacity: 0, x: 20 }}
 				animate={{ opacity: 1, x: 0 }}
-				exit={{ opacity: 0}}
+				exit={{ opacity: 0 }}
 				transition={{ duration: 0.5 }}
-				className="w-full rounded-lg overflow-hidden"
+				className="w-full h-full rounded-lg overflow-hidden"
 			>
 				<Image
 					width={650}
 					height={550}
-					src={slides[currentSlide]}
-					alt={`Slide ${currentSlide + 1}`}
-					className="w-full h-full object-cover"
+					src={slide}
+					alt={`Slide`}
+					className="w-full h-auto object-contain"
 				/>
 			</motion.div>
 		</div>
